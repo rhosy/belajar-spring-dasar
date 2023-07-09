@@ -8,4 +8,15 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo "Hellooo ..."
+        }
+        success {
+            echo "Yeee Success ..."
+        }
+        failure {
+            echo "Oooppss! Error ..."
+        }
+    }
 }
